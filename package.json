@@ -45,6 +45,7 @@
     "test": "jest --config ./config/jest.config.js",
     "test:ci": "npm run lint && npm run test -- --ci",
     "prepublishOnly": "npm run build",
+    "prepare": "npm run build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "version:pr": "node ./config/version-pr",
